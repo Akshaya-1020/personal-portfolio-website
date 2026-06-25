@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Akshaya | Mission Control</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- Custom Cursors -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+  <div class="cursor-glow-trail"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-link" href="#home"><i class="fas fa-home"></i><span>Home</span></a>
+      <a class="nav-link" href="#about"><i class="fas fa-user"></i><span>About</span></a>
+      <a class="nav-link" href="#education"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+      <a class="nav-link" href="#skills"><i class="fas fa-code"></i><span>Skills</span></a>
+      <a class="nav-link" href="#projects"><i class="fas fa-briefcase"></i><span>Projects</span></a>
+      <a class="nav-link" href="#certifications"><i class="fas fa-certificate"></i><span>Certifications</span></a>
+      <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+      <button id="themeToggle" class="theme-toggle-btn"><i class="fas fa-moon"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section - MISSION CONTROL -->
+    <section id="home" class="section hero mission-hero">
+      <canvas id="missionCanvas" class="hero-canvas mission-canvas"></canvas>
+      
+      <!-- Floating HUD Elements -->
+      <div class="hud-mission hud-mission-1">
+        <span class="hud-led"></span>
+        SYSTEM ONLINE
+      </div>
+      <div class="hud-mission hud-mission-2">
+        <span class="hud-led"></span>
+        AI CORE ACTIVE
+      </div>
+      <div class="hud-mission hud-mission-3">
+        <span class="hud-led"></span>
+        TECH MODE ENABLED
+      </div>
+
+      <!-- Energy Waves Background -->
+      <div class="mission-wave wave-1"></div>
+      <div class="mission-wave wave-2"></div>
+      <div class="mission-wave wave-3"></div>
+
+      <!-- Main Control Panel -->
+      <div class="mission-control-panel">
+        
+        <!-- LEFT PANEL -->
+        <div class="mission-left">
+          <div class="mission-badge">
+            <span class="badge-icon">◈</span>
+            MISSION CONTROL
+          </div>
+          
+          <div class="mission-role">DEVELOPER</div>
+          
+          <h1 class="mission-name">
+            <span class="name-mission">AKSHAYA</span>
+          </h1>
+          
+          <div class="mission-mission">
+            <span class="mission-label">MISSION</span>
+            <span class="mission-text">BUILDING FUTURE SOFTWARE</span>
+          </div>
+          
+          <p class="mission-description">
+            Full Stack Developer creating scalable applications, intelligent systems, and modern digital experiences.
+          </p>
+          
+          <!-- Statistics Cards -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">05<span>+</span></div>
+              <div class="stat-label">PROJECTS</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">02<span>+</span></div>
+              <div class="stat-label">EXPERIENCE</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">10<span>+</span></div>
+              <div class="stat-label">SKILLS</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number status-online">
+                <span class="status-dot"></span> ONLINE
+              </div>
+              <div class="stat-label">STATUS</div>
+            </div>
+          </div>
+          
+          <!-- CTA Button -->
+          <div class="mission-cta">
+            <a href="#projects" class="cta-mission magnetic-btn">
+              <span>START JOURNEY</span>
+              <i class="fas fa-arrow-right"></i>
+              <div class="btn-mission-glow"></div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- RIGHT PANEL - Holographic Globe -->
+        <div class="mission-right">
+          <div class="hologram-container">
+            <div class="hologram-globe">
+              <div class="globe-core"></div>
+              <div class="globe-ring ring-a"></div>
+              <div class="globe-ring ring-b"></div>
+              <div class="globe-ring ring-c"></div>
+              <div class="globe-ring ring-d"></div>
+              <div class="globe-grid"></div>
+              <div class="globe-particles">
+                <span class="gp gp-1"></span>
+                <span class="gp gp-2"></span>
+                <span class="gp gp-3"></span>
+                <span class="gp gp-4"></span>
+                <span class="gp gp-5"></span>
+                <span class="gp gp-6"></span>
+                <span class="gp gp-7"></span>
+                <span class="gp gp-8"></span>
+              </div>
+              <div class="globe-glow"></div>
+            </div>
+            <div class="hologram-label">◈ HOLOGRAPHIC INTERFACE</div>
+            <div class="orbit-line orbit-1"></div>
+            <div class="orbit-line orbit-2"></div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="mouse-scroll"></div>
+        <span>Scroll to Explore</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-photo parallax-img">
+            <div class="photo-reveal"><img src="Akshaya Image.jpeg" alt="Akshaya B"></div>
+          </div>
+          <div class="about-text">
+            <h2 class="section-title" style="text-align:left; margin-bottom:1rem;">Hi, I'm Akshaya</h2>
+            <div class="story-step"><strong>✦ Journey</strong><p>Computer Science Engineering student passionate about ServiceNow,software development, cloud technologies, artificial intelligence,and creating impactful digital solutions.</p></div>
+            <div class="story-step"><strong>✦ Philosophy</strong><p>I specialize in building responsive frontend interfaces, backend systems, database-driven applications, and cloud-based solutions.</p></div>
+            <div class="story-step"><strong>✦ Mission</strong><p>My journey focuses on continuous learning, problem solving, and transforming ideas into real-world applications.</p></div>
+            <div class="about-cta">
+              <a href="#contact" class="about-contact-btn magnetic-btn">Collab <i class="fas fa-arrow-right"></i></a>
+              <a href="#projects" class="about-projects-btn magnetic-btn">Masterworks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="education" class="section education">
+      <div class="container">
+        <h2 class="section-title"> EXPERIENCE TIMELINE</h2>
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+          <div class="timeline-item"><div class="timeline-dot gold"></div><div class="timeline-content"><h3>B.E Computer Science and Engineering</h3><span>2023 - 2027 | R.M.K College of Engineering and Technology</span><p>Specialization: Cloud Computing</p></div></div>
+          <div class="timeline-item"><div class="timeline-dot purple"></div><div class="timeline-content"><h3>Java Developer Intern</h3><span>Internship</span><p>Worked on Java programming, object-oriented concepts, backend logic, and application development.</p></div></div>
+          <div class="timeline-item"><div class="timeline-dot gold"></div><div class="timeline-content"><h3>Web Developer Intern</h3><span>Internship</span><p>Developed responsive web interfaces using HTML, CSS, JavaScript and modern UI practices.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills with 3D Flip & Category Filter -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title"> TECH STACK</h2>
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="tools">Tools</button>
+        </div>
+        <div class="skills-grid" id="skillsGrid">
+          <div class="skill-card-3d" data-category="frontend"><div class="skill-inner"><div class="skill-front"><i class="fab fa-html5"></i><span>HTML5</span></div><div class="skill-back"><p>Semantic • SEO</p></div></div></div>
+          <div class="skill-card-3d" data-category="frontend"><div class="skill-inner"><div class="skill-front"><i class="fab fa-css3-alt"></i><span>CSS3</span></div><div class="skill-back"><p>Animations • Grid</p></div></div></div>
+          <div class="skill-card-3d" data-category="frontend"><div class="skill-inner"><div class="skill-front"><i class="fab fa-js"></i><span>JavaScript</span></div><div class="skill-back"><p>ES6+ • React</p></div></div></div>
+          <div class="skill-card-3d" data-category="frontend"><div class="skill-inner"><div class="skill-front"><i class="fab fa-react"></i><span>React.js</span></div><div class="skill-back"><p>Hooks • State</p></div></div></div>
+          <div class="skill-card-3d" data-category="backend"><div class="skill-inner"><div class="skill-front"><i class="fab fa-java"></i><span>Java</span></div><div class="skill-back"><p>OOP • Core</p></div></div></div>
+          <div class="skill-card-3d" data-category="backend"><div class="skill-inner"><div class="skill-front"><i class="fas fa-leaf"></i><span>Spring Boot</span></div><div class="skill-back"><p>REST APIs</p></div></div></div>
+          <div class="skill-card-3d" data-category="backend"><div class="skill-inner"><div class="skill-front"><i class="fab fa-node-js"></i><span>Node.js</span></div><div class="skill-back"><p>Express • APIs</p></div></div></div>
+          <div class="skill-card-3d" data-category="backend"><div class="skill-inner"><div class="skill-front"><i class="fas fa-database"></i><span>MySQL</span></div><div class="skill-back"><p>Queries • Design</p></div></div></div>
+          <div class="skill-card-3d" data-category="backend"><div class="skill-inner"><div class="skill-front"><i class="fas fa-database"></i><span>MongoDB</span></div><div class="skill-back"><p>NoSQL • Atlas</p></div></div></div>
+          <div class="skill-card-3d" data-category="tools"><div class="skill-inner"><div class="skill-front"><i class="fab fa-git-alt"></i><span>Git</span></div><div class="skill-back"><p>Version Control</p></div></div></div>
+          <div class="skill-card-3d" data-category="tools"><div class="skill-inner"><div class="skill-front"><i class="fab fa-github"></i><span>GitHub</span></div><div class="skill-back"><p>Collaboration</p></div></div></div>
+          <div class="skill-card-3d" data-category="tools"><div class="skill-inner"><div class="skill-front"><i class="fas fa-code"></i><span>VS Code</span></div><div class="skill-back"><p>IDE • Extensions</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Featured <span class="gold-text">Masterpieces</span></h2>
+        <div class="projects-filter">
+          <button class="project-filter-btn active" data-proj-filter="all">All</button>
+          <button class="project-filter-btn" data-proj-filter="ai">AI/ML</button>
+          <button class="project-filter-btn" data-proj-filter="web">Web Apps</button>
+          <button class="project-filter-btn" data-proj-filter="cloud">Cloud/Java</button>
+          <button class="project-filter-btn" data-proj-filter="servicenow">ServiceNow</button>
+        </div>
+        <div class="projects-grid enhanced-grid" id="projectsGrid">
+          <!-- Project 1 - AI Chat -->
+          <div class="project-3d-card" data-proj-category="ai">
+            <div class="project-card-inner">
+              <div class="project-icon"><i class="fas fa-robot"></i><div class="glow-effect"></div></div>
+              <h3>AI Chat Application</h3>
+              <p>An intelligent chatbot application with AI-powered responses and interactive conversational experience.</p>
+              <div class="tech-stack"><span>Machine Learning</span><span>AI API</span><span>Frontend</span></div>
+              <button class="project-modal-btn" data-project="ai" data-github="https://github.com/akshaya/ai-chat-app">✨ Preview</button>
+            </div>
+          </div>
+          <!-- Project 2 - Expense Tracker -->
+          <div class="project-3d-card" data-proj-category="web">
+            <div class="project-card-inner">
+              <div class="project-icon"><i class="fas fa-chart-line"></i><div class="glow-effect"></div></div>
+              <h3>Expense Tracker</h3>
+              <p>A full-stack expense management platform with analytics dashboard and financial tracking.</p>
+              <div class="tech-stack"><span>Html,css,js</span><span>Node.js</span><span>Database</span></div>
+              <button class="project-modal-btn" data-project="expense" data-github="https://github.com/akshaya/expense-tracker">✨ Preview</button>
+            </div>
+          </div>
+          <!-- Project 3 - Ocean Hazard -->
+          <div class="project-3d-card" data-proj-category="cloud">
+            <div class="project-card-inner">
+              <div class="project-icon"><i class="fas fa-water"></i><div class="glow-effect"></div></div>
+              <h3>Ocean Hazard Detection System</h3>
+              <p>IoT based monitoring solution that detects environmental risks using real-time data processing.</p>
+              <div class="tech-stack"><span>Python</span><span>ML</span><span>Cloud</span></div>
+              <button class="project-modal-btn" data-project="ocean" data-github="https://github.com/akshaya/ocean-hazard-detection">✨ Preview</button>
+            </div>
+          </div>
+          <!-- Project 4 - Developer Portfolio -->
+          <div class="project-3d-card" data-proj-category="web">
+            <div class="project-card-inner">
+              <div class="project-icon"><i class="fas fa-crown"></i><div class="glow-effect"></div></div>
+              <h3>Developer Portfolio</h3>
+              <p>Interactive developer portfolio featuring animations, responsive design and modern UI.</p>
+              <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <button class="project-modal-btn" data-project="portfolio" data-github="file:///D:/Akshaya%20Port/index.html">✨ Preview</button>
+            </div>
+          </div>
+          <!-- Project 5 - StartupBridge -->
+          <div class="project-3d-card" data-proj-category="servicenow">
+            <div class="project-card-inner">
+              <div class="project-icon"><i class="fab fa-servicenow"></i><div class="glow-effect"></div></div>
+              <h3>StartupBridge</h3>
+              <p>ServiceNow-based career platform connecting students with startups for internships and job opportunities.</p>
+              <div class="tech-stack"><span>ServiceNow</span><span>Flow Designer</span><span>Workflows</span></div>
+              <button class="project-modal-btn" data-project="startupbridge" data-github="https://github.com/akshaya/startupbridge">✨ Preview</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas id="projectParticles" class="project-canvas"></canvas>
+    </section>
+
+    <!-- Certifications Flip Cards -->
+    <section id="certifications" class="section certifications">
+      <div class="container">
+        <h2 class="section-title">CERTIFICATION<span class="gold-text"> VAULT</span></h2>
+        <div class="certs-grid premium-certs-grid">
+          
+          <!-- 1. ServiceNow CSA -->
+          <div class="cert-flip premium-flip" data-cert-link="https://www.credly.com/badges/your-csa-badge-link">
+            <div class="cert-flip-inner">
+              <div class="cert-front premium-front servicenow-front">
+                <div class="cert-icon-wrapper">
+                  <svg class="premium-icon servicenow-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="15" y="25" width="70" height="50" rx="10" stroke="url(#servicenowGrad)" stroke-width="2.5" fill="rgba(0,255,136,0.05)"/>
+                    <path d="M30 45 L70 45" stroke="url(#servicenowGrad)" stroke-width="2.5"/>
+                    <path d="M30 55 L55 55" stroke="url(#servicenowGrad)" stroke-width="2.5"/>
+                    <circle cx="78" cy="38" r="5" fill="#00ff88" opacity="0.6">
+                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="78" cy="62" r="5" fill="#00ff88" opacity="0.6">
+                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" begin="1s" repeatCount="indefinite"/>
+                    </circle>
+                    <defs>
+                      <linearGradient id="servicenowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#00ff88"/>
+                        <stop offset="100%" style="stop-color:#00cc66"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <h4>ServiceNow<br>Certified System Administrator</h4>
+                <div class="cert-badge premium-badge csa-badge">
+                  <span class="badge-short">CSA</span>
+                  <span class="badge-glow-dot"></span>
+                </div>
+                <div class="click-hint">Click to View</div>
+              </div>
+              <div class="cert-back premium-back">
+                <div class="back-content">
+                  <div class="back-icon">★</div>
+                  <p class="back-title">CSA Certified</p>
+                  <p class="back-desc">ServiceNow System Administrator</p>
+                  <button class="view-cert premium-view open-cert-btn" data-link="https://drive.google.com/file/d/1RiEl0fV51_kk7-bWJHPL6Dy9QlYgFn3z/view?usp=drive_link">View Credential</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2. ServiceNow CAD -->
+          <div class="cert-flip premium-flip" data-cert-link="https://www.credly.com/badges/your-cad-badge-link">
+            <div class="cert-flip-inner">
+              <div class="cert-front premium-front cad-front">
+                <div class="cert-icon-wrapper">
+                  <svg class="premium-icon cad-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="15" y="25" width="70" height="50" rx="10" stroke="url(#cadGrad)" stroke-width="2.5" fill="rgba(212,175,55,0.05)"/>
+                    <path d="M30 45 L70 45" stroke="url(#cadGrad)" stroke-width="2.5"/>
+                    <path d="M30 55 L55 55" stroke="url(#cadGrad)" stroke-width="2.5"/>
+                    <circle cx="78" cy="38" r="5" fill="#D4AF37" opacity="0.6">
+                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="78" cy="62" r="5" fill="#D4AF37" opacity="0.6">
+                      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+                    </circle>
+                    <defs>
+                      <linearGradient id="cadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#D4AF37"/>
+                        <stop offset="100%" style="stop-color:#f5c542"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <h4>ServiceNow<br>Certified Application Developer</h4>
+                <div class="cert-badge premium-badge cad-badge">
+                  <span class="badge-short">CAD</span>
+                  <span class="badge-glow-dot gold-dot"></span>
+                </div>
+                <div class="click-hint">Click to View</div>
+              </div>
+              <div class="cert-back premium-back">
+                <div class="back-content">
+                  <div class="back-icon">✦</div>
+                  <p class="back-title">CAD Certified</p>
+                  <p class="back-desc">ServiceNow Application Developer</p>
+                  <button class="view-cert premium-view open-cert-btn" data-link="https://drive.google.com/file/d/10YpVAbGRMj4-UEIomSJgbjY5N9yP_Cdj/view?usp=sharing">View Credential</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 3. Oracle -->
+          <div class="cert-flip premium-flip" data-cert-link="https://www.credly.com/badges/your-oracle-badge-link">
+            <div class="cert-flip-inner">
+              <div class="cert-front premium-front oracle-front">
+                <div class="cert-icon-wrapper">
+                  <svg class="premium-icon oracle-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="50" cy="50" rx="35" ry="22" stroke="url(#oracleGrad)" stroke-width="2.5" fill="rgba(248,0,0,0.05)"/>
+                    <path d="M30 50 L70 50" stroke="url(#oracleGrad)" stroke-width="2.5"/>
+                    <path d="M38 42 L62 42" stroke="url(#oracleGrad)" stroke-width="2"/>
+                    <path d="M38 58 L62 58" stroke="url(#oracleGrad)" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="4" fill="#F80000">
+                      <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <text x="50" y="38" text-anchor="middle" fill="#F80000" font-size="12" font-weight="700" letter-spacing="1">☁</text>
+                    <defs>
+                      <linearGradient id="oracleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#F80000"/>
+                        <stop offset="100%" style="stop-color:#CC0000"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <h4>Oracle Cloud<br>AI Foundations</h4>
+                <div class="cert-badge premium-badge oracle-badge-cert">
+                  <span class="badge-short">OCI</span>
+                  <span class="badge-glow-dot red-dot"></span>
+                </div>
+                <div class="click-hint">Click to View</div>
+              </div>
+              <div class="cert-back premium-back">
+                <div class="back-content">
+                  <div class="back-icon">☁</div>
+                  <p class="back-title">AI Associate</p>
+                  <p class="back-desc">Oracle Cloud AI Foundations</p>
+                  <button class="view-cert premium-view open-cert-btn" data-link="https://drive.google.com/file/d/1ZymQhoXW7psRIKLSpLGOGF0arhdvdBZr/view?usp=drive_link">View Credential</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 4. SQL Certification -->
+          <div class="cert-flip premium-flip" data-cert-link="#">
+            <div class="cert-flip-inner">
+              <div class="cert-front premium-front sql-front">
+                <div class="cert-icon-wrapper">
+                  <i class="fas fa-database premium-fa-icon"></i>
+                </div>
+                <h4>SQL<br>Certification</h4>
+                <div class="cert-badge premium-badge sql-badge">
+                  <span class="badge-short">SQL</span>
+                  <span class="badge-glow-dot purple-dot"></span>
+                </div>
+                <div class="click-hint">Click to View</div>
+              </div>
+              <div class="cert-back premium-back">
+                <div class="back-content">
+                  <div class="back-icon">📊</div>
+                  <p class="back-title">SQL Mastery</p>
+                  <p class="back-desc">Database Management & Querying</p>
+                  <button class="view-cert premium-view open-cert-btn" data-link="https://drive.google.com/file/d/1lhPy_mYw6jbhx59Ph0qTugtGSfjdqLHi/view?usp=drive_link">View Credential</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 5. HTML & CSS Certification -->
+          <div class="cert-flip premium-flip" data-cert-link="#">
+            <div class="cert-flip-inner">
+              <div class="cert-front premium-front html-front">
+                <div class="cert-icon-wrapper">
+                  <i class="fab fa-html5 premium-fa-icon html-icon"></i>
+                  <span class="css-icon-overlay">+ CSS</span>
+                </div>
+                <h4>HTML & CSS<br>Certification</h4>
+                <div class="cert-badge premium-badge html-badge">
+                  <span class="badge-short">WEB</span>
+                  <span class="badge-glow-dot orange-dot"></span>
+                </div>
+                <div class="click-hint">Click to View</div>
+              </div>
+              <div class="cert-back premium-back">
+                <div class="back-content">
+                  <div class="back-icon">🌐</div>
+                  <p class="back-title">Web Foundations</p>
+                  <p class="back-desc">HTML5 & CSS3 Mastery</p>
+                  <button class="view-cert premium-view open-cert-btn" data-link="https://drive.google.com/drive/folders/1YQf1MDwEoezIgxAj4UTWu55KgRdfre_0?usp=sharing">View Credential</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">CONNECTION NODE</h2>
+        <div class="contact-wrapper">
+          <form id="contactForm" class="glass-form">
+            <div class="input-group"><input type="text" id="name" placeholder="Your Name" required><span class="focus-border"></span></div>
+            <div class="input-group"><input type="email" id="email" placeholder="Email" required><span class="focus-border"></span></div>
+            <div class="input-group"><textarea id="message" rows="4" placeholder="Your Message"></textarea><span class="focus-border"></span></div>
+            <button type="submit" class="submit-btn magnetic-btn" id="submitBtn"><span>Send Raven</span><i class="fas fa-paper-plane"></i></button>
+            <div id="formFeedback"></div>
+          </form>
+          <div class="contact-info-glow">
+            <div class="info-line"><i class="fas fa-user"></i> Akshaya B</div>
+            <div class="info-line"><i class="fas fa-briefcase"></i> Full Stack Developer</div>
+            <div class="info-line"><i class="fas fa-envelope"></i> akshayab200706@gmail.com</div>
+            <div class="info-line"><i class="fas fa-phone-alt"></i> +91 8122488705</div>
+            <div class="social-row"><a href="https://linkedin.com/in/akshaya-b" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://github.com/akshaya" target="_blank"><i class="fab fa-github"></i></a><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Akshaya <br>Built with passion, creativity and technology.</p></footer>
+  <button id="scrollToTop" class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Modal for Project Preview -->
+  <div id="projectModal" class="modal"><div class="modal-content"><span class="close-modal">&times;</span><div class="modal-body"></div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  <script>emailjs.init("L-vHVM3O9zReAbGTI");</script>
+</body>
+</html>
